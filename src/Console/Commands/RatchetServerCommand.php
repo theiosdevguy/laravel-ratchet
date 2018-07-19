@@ -269,9 +269,11 @@ class RatchetServerCommand extends Command
             $this->ratchetServer->onEntry($messages);
         });
 
+        /*
         $socket->on('message', function ($message) {
             $this->ratchetServer->onEntry($message);
         });
+        */
     }
 
     /**
