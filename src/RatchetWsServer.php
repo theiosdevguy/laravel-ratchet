@@ -88,9 +88,9 @@ abstract class RatchetWsServer implements MessageComponentInterface
     {
         if ($this->isThrottled($this->conn, 'onOpen')) {
             $this->console->info(sprintf('Connection throttled: %d', $this->conn->resourceId));
-            $this->conn->send(trans('ratchet::messages.tooManyConnectionAttempts'));
-            $this->throttled = true;
-            $this->conn->close();
+//            $this->conn->send(trans('ratchet::messages.tooManyConnectionAttempts'));
+//            $this->throttled = true;
+//            $this->conn->close();
         }
 
         return $this;
